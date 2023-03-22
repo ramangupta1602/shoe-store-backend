@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoryys",
+  "info": {
+    "singularName": "categoryy",
+    "pluralName": "categoryys",
+    "displayName": "categoryy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "productts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::productt.productt",
+      "inversedBy": "categoryys"
+    }
+  }
+}

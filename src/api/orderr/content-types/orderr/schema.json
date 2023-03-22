@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orderrs",
+  "info": {
+    "singularName": "orderr",
+    "pluralName": "orderrs",
+    "displayName": "orderr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stripid": {
+      "type": "string",
+      "required": false
+    },
+    "productts": {
+      "type": "json"
+    }
+  }
+}
